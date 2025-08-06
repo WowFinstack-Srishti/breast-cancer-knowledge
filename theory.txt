@@ -50,3 +50,34 @@ CNNs (Convolutional Neural Networks) are designed to process pixel data. Unlike 
 🛠️ (4) Setup & Tools (for Mac M1)
     pip install tensorflow matplotlib numpy
 
+
+🧠 Project Workflow (Data Science + ML Combined)
+
+	1.	Problem Statement:
+	    •	Goal: Classify breast histopathology images as benign or malignant.
+	2.	Dataset:
+	    •	Example: IDC (Invasive Ductal Carcinoma) Histopathology Dataset
+	    •	Images are labeled and stored in folders.
+	3.	Data Preprocessing:
+	    •	Resize images
+	    •	Normalize pixel values
+	    •	Augment data if needed
+	4.	EDA:
+	    •	Count of benign vs malignant images
+	    •	Visual samples
+	    •	Class distribution
+	    •	Color/texture statistics
+	5.	Modeling:
+	    •	Classical ML (with image features like color histogram, Haralick textures)
+	    •	OR CNN (e.g., using TensorFlow/Keras or PyTorch)
+	6.	Evaluation Metrics:
+	    •	Accuracy, Precision, Recall, F1 Score
+	    •	Confusion matrix
+	    •	ROC-AUC
+	7.	Interpretability (important for data science):
+	    •	SHAP / Grad-CAM to explain model predictions
+	    •	Error analysis
+	8.	Deployment (optional):
+	    •	Simple Streamlit web app
+	    •	Jupyter notebook report
+	    •	PDF presentation/report with visuals
