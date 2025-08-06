@@ -1,2 +1,7 @@
 -> Breast Cancer Classification from Histopathology Images.
     -> Add Grad-CAM for explainability. (Later after base project)
+
+•	Data Availability: ✅ High (BreakHis or Camelyon16/17)
+•	Skills Needed: Basic image classification using CNN
+•	Tools: Python, Keras/PyTorch, OpenCV
+•	SHAP adds statistical rigor; Grad-CAM adds visual appeal.
