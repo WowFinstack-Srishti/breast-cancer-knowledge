@@ -1,7 +1,47 @@
 -> Breast Cancer Classification from Histopathology Images.
     -> Add Grad-CAM for explainability. (Later after base project)
 
-•	Data Availability: ✅ High (BreakHis or Camelyon16/17)
+•	Data Availability: ✅ High (BreakHis or Camelyon16/17) 
+    •   BreakHis(https://www.kaggle.com/datasets/ambarish/breakhis)
+    •   Camelyon16/17(https://camelyon17.grand-challenge.org/)
 •	Skills Needed: Basic image classification using CNN
 •	Tools: Python, Keras/PyTorch, OpenCV
 •	SHAP adds statistical rigor; Grad-CAM adds visual appeal.
+
+CNN:
+-> basic image classification using Convolutional Neural Networks (CNNs) is a key skill in machine learning,
+     especially for projects involving visual data like medical imaging, object recognition, etc.
+
+
+🧠 (1) What is Image Classification?
+
+Image classification is a task where a model takes an input image and assigns it a label (category).
+Examples:
+	•	Is this a cat or dog?
+	•	Is this X-ray normal or pneumonia?
+
+
+🧱 (2) Why CNN for Images?
+
+CNNs (Convolutional Neural Networks) are designed to process pixel data. Unlike regular neural networks, CNNs use filters to detect features (edges, corners, patterns) in images.
+
+
+⚙️ (3) CNN Building Blocks
+
+🧩 1. Convolutional Layer
+	•	Applies a filter (kernel) over the image to detect features.
+	•	Think: edge detectors, texture detectors.
+
+🧩 2. Activation Function (ReLU)
+	•	Introduces non-linearity to allow complex patterns.
+
+🧩 3. Pooling Layer (MaxPooling)
+	•	Reduces the size (downsampling), retains key features.
+	•	Helps reduce computation & overfitting.
+
+🧩 4. Flatten Layer
+	•	Converts the 2D output into 1D vector to feed into dense layers.
+
+🧩 5. Fully Connected (Dense) Layer
+	•	Final classification decision is made here.
+	•	Often ends in a Softmax (for multiclass) or Sigmoid (for binary) layer.
