@@ -56,7 +56,7 @@ CNNs (Convolutional Neural Networks) are designed to process pixel data. Unlike 
 	1.	Problem Statement:
 	    •	Goal: Classify breast histopathology images as benign or malignant.
 	2.	Dataset:
-	    •	Example: IDC (Invasive Ductal Carcinoma) Histopathology Dataset
+	    •	Example: IDC (Invasive Ductal Carcinoma) Histopathology Dataset (https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images)
 	    •	Images are labeled and stored in folders.
 	3.	Data Preprocessing:
 	    •	Resize images
