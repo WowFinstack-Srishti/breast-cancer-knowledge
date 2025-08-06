@@ -28,20 +28,91 @@ CNNs (Convolutional Neural Networks) are designed to process pixel data. Unlike 
 
 ⚙️ (3) CNN Building Blocks
 
-🧩 1. Convolutional Layer
-	•	Applies a filter (kernel) over the image to detect features.
-	•	Think: edge detectors, texture detectors.
+    🧩 1. Convolutional Layer
+	    •	Applies a filter (kernel) over the image to detect features.
+	    •	Think: edge detectors, texture detectors.
 
-🧩 2. Activation Function (ReLU)
-	•	Introduces non-linearity to allow complex patterns.
+    🧩 2. Activation Function (ReLU)
+	    •	Introduces non-linearity to allow complex patterns.
 
-🧩 3. Pooling Layer (MaxPooling)
-	•	Reduces the size (downsampling), retains key features.
-	•	Helps reduce computation & overfitting.
+    🧩 3. Pooling Layer (MaxPooling)
+	    •	Reduces the size (downsampling), retains key features.
+	    •	Helps reduce computation & overfitting.
 
-🧩 4. Flatten Layer
-	•	Converts the 2D output into 1D vector to feed into dense layers.
+    🧩 4. Flatten Layer
+	    •	Converts the 2D output into 1D vector to feed into dense layers.
 
-🧩 5. Fully Connected (Dense) Layer
-	•	Final classification decision is made here.
-	•	Often ends in a Softmax (for multiclass) or Sigmoid (for binary) layer.
+    🧩 5. Fully Connected (Dense) Layer
+	    •	Final classification decision is made here.
+	    •	Often ends in a Softmax (for multiclass) or Sigmoid (for binary) layer.
+
+
+🛠️ (4) Setup & Tools (for Mac M1)
+    pip install tensorflow matplotlib numpy
+
+
+🧪 (5) Simple CNN Example (MNIST Handwritten Digits)
+
+import tensorflow as tf
+from tensorflow.keras import layers, models
+import matplotlib.pyplot as plt
+
+# Load MNIST dataset
+(x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
+
+# Preprocess
+x_train = x_train.reshape(-1, 28, 28, 1).astype("float32") / 255
+x_test = x_test.reshape(-1, 28, 28, 1).astype("float32") / 255
+
+# Build CNN model
+model = models.Sequential([
+    layers.Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+    layers.MaxPooling2D((2, 2)),
+
+    layers.Conv2D(64, (3, 3), activation='relu'),
+    layers.MaxPooling2D((2, 2)),
+
+    layers.Flatten(),
+    layers.Dense(64, activation='relu'),
+    layers.Dense(10, activation='softmax')
+])
+
+# Compile model
+model.compile(optimizer='adam',
+              loss='sparse_categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Train
+history = model.fit(x_train, y_train, epochs=5, validation_split=0.1)
+
+# Evaluate
+test_loss, test_acc = model.evaluate(x_test, y_test)
+print("Test accuracy:", test_acc)
+
+
+📊 6. Evaluate the Model
+
+Plot training history:
+
+plt.plot(history.history['accuracy'], label='train accuracy')
+plt.plot(history.history['val_accuracy'], label='val accuracy')
+plt.legend()
+plt.show()
+
+
+🧼 7. Data Augmentation (Important for small datasets)
+
+Helps prevent overfitting.
+
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+datagen = ImageDataGenerator(
+    rotation_range=10,
+    zoom_range=0.1,
+    horizontal_flip=True
+)
+
+datagen.fit(x_train)
+
+#Use model.fit(datagen.flow(x_train, y_train), ...) instead of regular training.
+
