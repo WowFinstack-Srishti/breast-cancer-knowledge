@@ -1,5 +1,41 @@
 Relevant Research Papers: 
 
-1. BCaXAI: Grad‑CAM Enabled Breast Cancer Classification with 3D Inception‑ResNet V2 – uses Grad‑CAM on mammograms achieving ~98 %        accuracy and AUROC ~0.9933 (https://pmc.ncbi.nlm.nih.gov/articles/PMC11544836/)
+1. Grad-CAM Enabled Breast Cancer Classification with a 3D Inception-ResNet V2: Empowering Radiologists with Explainable Insights (https://pmc.ncbi.nlm.nih.gov/articles/PMC11544836/)
 
-2. 
+2. Breast cancer classification based on breast tissue structures using the Jigsaw puzzle task in self-supervised learning (https://link.springer.com/article/10.1007/s12194-024-00874-y)
+
+3. An interpretable decision-support model for breast cancer diagnosis using histopathology images (https://www.sciencedirect.com/science/article/pii/S2153353923001335)
+
+4. Artificial intelligence in digital histopathology for predicting patient prognosis and treatment efficacy in breast cancer (https://www.tandfonline.com/doi/full/10.1080/14737159.2024.2346545)
+
+5. Explainable Deep Learning for Breast Cancer Classification and Localization (https://dl.acm.org/doi/10.1145/3702237)
+
+6. An Explainable Graph Neural Network Approach for Patch Selection Using a New Patch Score Metric in Breast Cancer Detection (https://onlinelibrary.wiley.com/doi/10.1002/ima.70078)
+
+7. Histopathological image based breast cancer diagnosis using deep learning and bio inspired optimization (https://www.nature.com/articles/s41598-025-04136-8)
+
+8. Explainable Soft Attentive EfficientNet for breast cancer classification in histopathological images (https://www.sciencedirect.com/science/article/abs/pii/S1746809423012612)
+
+9. Efficient breast cancer diagnosis using multi-level progressive feature aggregation based deep transfer learning system (https://onlinelibrary.wiley.com/doi/10.1002/ima.23050)
+
+10. Histopathology in focus: a review on explainable multi-modal approaches for breast cancer diagnosis (https://pmc.ncbi.nlm.nih.gov/articles/PMC11471683/)
+
+11. Mammogram mastery: Breast cancer image classification using an ensemble of deep learning with explainable artificial intelligence (https://pmc.ncbi.nlm.nih.gov/articles/PMC12129490/)
+
+12. Histological Image Diagnosis of Breast Cancer Based on Multi-Attention Convolution Neural Network (https://link.springer.com/article/10.1007/s12204-024-2705-4)
+
+13. Explainable breast cancer molecular expression prediction using multi-task deep-learning based on 3D whole breast ultrasound (https://insightsimaging.springeropen.com/articles/10.1186/s13244-024-01810-9)
+
+14. Breast Cancer Classification with Enhanced Interpretability: DALAResNet50 and DT Grad-CAM (https://arxiv.org/html/2308.13150v15)
+
+15. Deep learning applications in breast cancer histopathological imaging: diagnosis, treatment, and prognosis (https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-024-01895-6)
+
+16. An explainable AI-driven deep neural network for accurate breast cancer detection from histopathological and ultrasound images (https://www.nature.com/articles/s41598-025-97718-5)
+
+17. Interpretable breast cancer classification using CNNs on mammographic images (https://arxiv.org/html/2408.13154v1)
+
+18. Addressing Uncertainty in Imbalanced Histopathology Image Classification of HER2 Breast Cancer: An interpretable Ensemble Approach with Threshold Filtered Single Instance Evaluation (SIE) (https://arxiv.org/abs/2308.00806)
+
+19. Use of Autoencoders for Improving the Performance of Classification and Interpretation of Convolutional Neural Networks in Histopathological Images (https://www.worldscientific.com/doi/10.1142/S1469026823500360?srsltid=AfmBOooHtG_wQXYIh0h8GcEPZlIkhD18O7rqNDhjgg77iGjlYal6dHra)
+
+20. Design of ensemble recurrent model with stacked fuzzy ARTMAP for breast cancer detection Open Access (https://www.emerald.com/aci/article/doi/10.1108/ACI-03-2022-0075/1248534/Design-of-ensemble-recurrent-model-with-stacked)

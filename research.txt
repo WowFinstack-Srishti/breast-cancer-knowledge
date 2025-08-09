@@ -1,3 +1,26 @@
 Breast cancer (BCa) poses a severe threat to women’s health worldwide as it is the most frequently diagnosed type of cancer and the primary cause of death for female patients. The biopsy procedure remains the gold standard for accurate and effective diagnosis of BCa.
 
 Keywords: breast cancer diagnosis, BCaXAI, deep learning, mammogram imaging, Grad-CAM, explainable AI
+
+
+Key Areas to work on:
+
+1. Side-by-side Grad-CAM vs SHAP UI - strong HCI novelty; easy to implement with Tkinter or a web app. 
+                                    Build an interactive UI (Tkinter or web) that shows prediction + Grad-CAM, SHAP (KernelSHAP or DeepSHAP), LIME; allow overlay opacity, zoom, toggle. Save comparisons per image.
+
+2. Multi-expert validation (simulated) -  add statistical & quantitative rigor using public ROI annotations.
+                                        Collect annotations from multiple pathologists for a subset (important regions). Compute consensus masks (majority or weighted).
+
+3. Transformer-based model explainability - (ViTs in histopathology + XAI is still new); adds a second model family to compare with CNNs.
+                                            Adapt XAI: use attention rollout, transformer-GradCAM, and SHAP on patch embeddings. Compare with CNN-based Grad-CAM.
+
+4. Quantitative explainability metrics - tables, graphs, and statistical significance results.
+                                        Propose a small benchmark dataset with ROI masks + metrics: IoU, Dice, deletion/insertion AUC, pointing game score, and faithfulness (fidelity).
+
+5. HCI-focused features for pathologists - Integrates ML, DS, and HCI perfectly.
+                                        Design workflows: annotate disagreement, vote on maps, export annotated reports, and attach model confidence & counterfactuals.
+
+
+Novelty Statement for the paper:
+
+“This work presents a novel clinician-friendly interface for breast cancer histopathology classification that integrates both Grad-CAM and SHAP explanations side-by-side, enabling direct visual and quantitative comparison across CNN and Vision Transformer architectures. Using publicly available datasets with ROI annotations, we quantitatively assess explanation fidelity using IoU, Dice, and fidelity metrics, simulating multi-expert validation. The system further incorporates HCI best practices, offering interactive heatmap comparison, zoom, opacity adjustment, and explanation trust indicators — addressing the gap between explainable AI research and practical clinical adoption.”
