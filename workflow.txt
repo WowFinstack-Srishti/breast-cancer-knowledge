@@ -100,3 +100,12 @@ Quick details / what to do inside each step:
 
 	15.	Reproducibility & submission prep
 	    •	Add environment file, quickstart guide (how to run on Mac M1), license, and optional Docker/conda. Prepare cover letter and submission checklist for target journals.
+
+
+Useful practical tips: 
+
+	•	Save intermediate outputs (patches, heatmaps, metrics CSV) — they speed iteration.
+	•	Limit SHAP runs to a validation subset to save compute; report representative examples.
+	•	Use pretrained weights to save time; train for fewer epochs with careful LR scheduling.
+	•	Automate experiments with a small config system (YAML) so results are reproducible.
+	•	For HCI, start with a simple Streamlit prototype — quick to build and share — then refine to Tkinter if you need a desktop app.
