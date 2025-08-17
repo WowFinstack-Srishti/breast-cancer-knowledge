@@ -1,0 +1,31 @@
+BREAST-CANCER-CLASSIFICATION/
+│
+├── configs/                          # Configuration files
+│   └── default.yaml                  # Default experiment/training configs
+│
+├── data/                             # Dataset storage (raw / processed)
+│
+├── experiments/                      # Saved experiment runs, models, logs
+│
+├── notebooks/                        # Jupyter notebooks for exploration/EDA
+│
+├── scripts/                          # Preprocessing and data preparation scripts
+│   ├── extract_patches.py            # Extracts image patches from WSIs
+│   └── stain_norm.py                 # Performs stain normalization on patches
+│
+├── src/                              # Core source code
+│   ├── __init__.py                   # Marks src as a package
+│   ├── datasets.py                   # Custom PyTorch Dataset classes
+│   ├── evaluate.py                   # Model evaluation pipeline
+│   ├── logging_utils.py              # Logging helpers for training/experiments
+│   ├── metrics.py                    # Classification metrics (accuracy, F1, etc.)
+│   ├── models.py                     # CNN architectures / model definitions
+│   ├── train.py                      # Training loop and optimization logic
+│   ├── ui_tkinter.py                 # Tkinter-based GUI for image classification
+│   ├── utils.py                      # Utility/helper functions
+│   └── xai.py                        # Explainable AI (Grad-CAM, SHAP, etc.)
+│
+├── venv/                             # Virtual environment (Python dependencies)
+│
+├── .gitignore                        # Files/folders ignored by Git
+└── requirements.txt                  # Python dependencies list
