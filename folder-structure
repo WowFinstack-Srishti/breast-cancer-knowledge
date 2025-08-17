@@ -1,0 +1,29 @@
+BREAST-CANCER-CLASSIFICATION/
+│
+├── configs/
+│   └── default.yaml
+│
+├── data/
+│
+├── experiments/
+│
+├── notebooks/
+│
+├── scripts/
+│
+├── src/
+│   ├── __init__.py
+│   ├── datasets.py
+│   ├── evaluate.py
+│   ├── logging_utils.py
+│   ├── metrics.py
+│   ├── models.py
+│   ├── train.py
+│   ├── ui_tkinter.py
+│   ├── utils.py
+│   └── xai.py
+│
+├── venv/
+│
+├── .gitignore
+└── requirements.txt
